@@ -8,7 +8,7 @@ correr ```npm run start:dev``` la api se activa en http://localhost:3000
 
 en la ruta ```http://localhost:3000/swagger-ui``` se encuentra swagger, para realizar consultas en swagger, utilizar la KEY en el menu Authorize
 
-para consultas con fetch o clientes enviar el header Authorization: Bearer <KEYACA>
+para consultas con fetch o clientes enviar el header Authorization: Bearer "acalaKEY"
 
 en este mismo repo hay un archivo llamado ***NestFirstAPI.postman_collection.json*** para importar en Postman
 
