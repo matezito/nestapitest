@@ -14,6 +14,20 @@ export class PostsService {
   }
 
   async findAll(): Promise<Post[]> {
-    return await this.postModel.find().exec();
+    return await this.postModel.find();
+  }
+
+  async findOne(id: any): Promise<Post> {
+    return await this.postModel.findById(id);
+  }
+
+  async delete(id: any): Promise<Post> {
+    return await this.postModel.findByIdAndRemove(id);
+  }
+
+  async update(id: any, createPostDto: CreatePostDto): Promise<Post> {
+    return await this.postModel.findByIdAndUpdate(id, createPostDto, {
+      new: true,
+    });
   }
 }
