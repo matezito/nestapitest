@@ -111,6 +111,93 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GetPost",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer holasoylakey",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/posts/61e744ba6e5a23bfcbd67ae7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"61e744ba6e5a23bfcbd67ae7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePost",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer holasoylakey",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/posts/61e744ba6e5a23bfcbd67ae7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"61e744ba6e5a23bfcbd67ae7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutPost",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer holasoylakey",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"new edited title\",\r\n    \"content\": \"el coso del cosito\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts/61e7e91e29ccd6a3477e1bde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"61e7e91e29ccd6a3477e1bde"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"variable": [
